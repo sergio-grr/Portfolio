@@ -1,0 +1,160 @@
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sergio Garrido</a>
+    <!-- Botón del menú desplegable -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menú desplegable -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " (click)="navigateToProyectPage()">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToAboutMePage()">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToContactPage()">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- tarjetas -->
+<div class="container flex">
+  <div class="row mt-4">
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/wheatherApp.png" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Weather-App</h2>
+          <p class="card-text">Esta aplicación del clima está desarrollada con Angular y TypeScript, y
+            utiliza una API para obtener información meteorológica en tiempo real. La aplicación permite al usuario visualizar las
+            condiciones climáticas actuales, así como pronósticos para los próximos días.</p>
+          <div class="text-center">
+            <a href="weatherApp" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/flagFinderApp.png" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Finder Flags App</h2>
+          <p class="card-text">Esta aplicación de banderas está desarrollada con Angular y TypeScript, y utiliza una API para obtener la información.
+            La aplicación permite visualizar banderas de diferentes países, y al hacer clic en una bandera,
+            se muestra información adicional sobre el país.</p>
+          <div class="text-center">
+            <a href="country" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/tasklist.png" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Tasklist App</h2>
+          <p class="card-text">Esta lista de tareas está desarrollada con Angular y TypeScript, y utiliza una estructura de datos dinámica para gestionar las tareas del usuario.
+            La aplicación permite al usuario agregar nuevas tareas, editar las existentes y marcarlas como completadas.</p>
+          <div class="text-center">
+            <a href="taskList" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/Map.png" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Population-Map App</h2>
+          <p class="card-text">Esta aplicación, desarrollada con Angular y TypeScript, utiliza una API para obtener datos de municipios y muestra un mapa interactivo con marcadores basados en las coordenadas de longitud y latitud de los municipios.</p>
+          <div class="text-center">
+            <a href="population" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/tfg-fondo.jpeg" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">TFG App</h2>
+          <p class="card-text">Muestro la app que realice para mi trabajo de fin de curso, se trata de un videojuego de plataformas, realizado con Html y Javascript</p>
+          <div class="text-center">
+            <a href="https://sergio-grr.github.io/prueba-proyecto/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/LogApp.png" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Log App</h2>
+          <p class="card-text">Un sistema de login permite a los usuarios acceder a contenido personalizado y adaptado a sus necesidades y preferencias. Esto puede incluir recomendaciones de productos o servicios, contenido exclusivo, o acceso a herramientas y recursos específicos. </p>
+          <div class="text-center">
+            <a href="login" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-sm-12 mb-3">
+      <div class="card">
+        <div class="card-front">
+          <img src="../../../../assets/Main/proyect/error404.png" class="card-img-top" alt="Imagen del Proyecto" />
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Log App</h2>
+          <p class="card-text">Página de error 404, es la página que se muestra si se accede a alguna ruta que no esta definida, símula una televisión antigua con problemas de señal. Contiene un link para volver al inicio del portfolio. </p>
+          <div class="text-center">
+            <a href="login" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+
+

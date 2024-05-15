@@ -1,0 +1,35 @@
+
+@import  "https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poetsen+One&display=swap";
+
+body{
+  background-image: url(../../../assets/Main/404/gifFile.gif);
+  height: 100vh;
+  background-size: cover;
+}
+
+
+
+h1,h2{
+
+  margin-bottom: 5%;
+  font-size: 4rem;
+  color: white;
+}
+
+p{
+  font-size:2rem ;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.container {
+  margin-top: 10%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+a {
+  font-family: "Pixelify Sans", sans-serif;
+ color: white;
+  text-align: center;
+  padding: 10px;
+}
+

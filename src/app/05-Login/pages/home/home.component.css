@@ -1,0 +1,35 @@
+body{
+  background-image: url(../../../../assets/Sessions/MatrixFondo.gif);
+  height: 100vh;
+
+}
+
+
+#pasti {
+  width: 50%;
+  height: auto;
+}
+
+#botones{
+  width: 50%;
+}
+
+#boton1{
+ background-color: rgb(40, 40, 248);
+ color: white;
+}
+
+#boton2{
+  background-color: rgb(128, 18, 18);
+  color: white;
+}
+
+#boton3{
+  background: none;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#exit{
+  margin: 10px;
+}

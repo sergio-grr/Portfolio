@@ -1,0 +1,137 @@
+<body>
+
+  <nav class="navbar container-fluid justify-content-center mt-3">
+    <img src="../../../../assets/Sessions/titulo.png" alt="Logo" class="img-fluid">
+  </nav>
+<hr>
+
+
+
+<div *ngIf="isLoggedIn" class="justify-content-center d-flex align-items-center">
+  <div class="row justify-content-center d-flex align-items-center">
+    <h2 id="avisologout" class="text-center">Has iniciado sesión</h2>
+    <div class="text-center">
+      <svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+      </svg>
+    </div>
+     <button  class="btn bg-danger mt-2" (click)="logout()">Logout</button>
+  </div>
+</div>
+
+
+
+<div *ngIf="isLoggedIn === undefined || !isLoggedIn" class="justify-content-center d-flex align-items-center">
+  <div class="row justify-content-center d-flex align-items-center">
+    <h2 id="avisologin" class="text-center">No has iniciado sesión</h2>
+    <div class="text-center">
+      <svg id="svg1" xmlns="@Url" width="30" height="30" fill="currentColor" class="bi bi-person-fill-dash" viewBox="0 0 16 16">
+        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+      </svg>
+    </div>
+    <button id="btnLogin" class="btn mt-2" (click)="navigateToLogin()">Log In</button>
+  </div>
+</div>
+
+
+<hr>
+  <div class="container flex animate__animated animate__backInDown">
+    <div class="row mt-4">
+      <div class="col-12 col-md-4 col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-front">
+            <img src="../../../../assets/Main/proyect/wheatherApp.png" class="card-img-top " alt="Imagen del Proyecto" />
+        </div>
+          <div class="card-body text-center">
+            <h2 class="card-title glitch">Weather-App</h2>
+            <div class="text-center">
+              <a id="azul" href="weatherApp" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="isLoggedIn" class="col-12 col-md-4 col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-front">
+            <img src="../../../../assets/Main/proyect/flagFinderApp.png" class="card-img-top" alt="Imagen del Proyecto" />
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title glitch">Finder Flags App</h2>
+            <div class="text-center">
+              <a id="rojo"  href="country" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-front">
+            <img src="../../../../assets/Main/proyect/tasklist.png" class="card-img-top" alt="Imagen del Proyecto" />
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title glitch">Tasklist App</h2>
+            <div class="text-center">
+              <a id="azul"  href="taskList" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="isLoggedIn" class="col-12 col-md-4 col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-front glitch">
+            <img src="../../../../assets/Main/proyect/Map.png" class="card-img-top" alt="Imagen del Proyecto" />
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title">Population-Map App</h2>
+            <div class="text-center">
+              <a id="rojo"  href="population" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-front">
+            <img src="../../../../assets/Main/proyect/tfg-fondo.jpeg" class="card-img-top" alt="Imagen del Proyecto" />
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title glitch">TFG App</h2>
+            <div class="text-center">
+              <a id="azul"  href="https://sergio-grr.github.io/prueba-proyecto/" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-md-4 col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-front">
+            <img src="../../../../assets/Main/proyect/error404.png" class="card-img-top" alt="Imagen del Proyecto" />
+          </div>
+          <div class="card-body text-center">
+            <h2 class="card-title glitch">Error</h2>
+            <div class="text-center">
+              <a id="azul"  href="**" class="btn btn-primary btn-sm">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<hr>
+  <footer class="d-flex justify-content-center align-items-center mt-5 mb-5">
+    <button id="boton3" class="bg-black" (click)="navigateToHome()">
+      <img  id="exit" src="../../../../assets/Sessions/exit.png">
+    </button>
+  </footer>
+</body>

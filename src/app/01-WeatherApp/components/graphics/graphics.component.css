@@ -1,0 +1,60 @@
+.weather-card {
+  padding: 20px;
+}
+
+.weather-card-content {
+  padding-top: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.weather-card {
+  background-color: rgb(71, 71, 71);
+  padding: 30px; /* Increased padding for improved readability */
+  border-radius: 10px; /* Softer rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for separation */
+  color: #fff; /* White text for better contrast */
+  text-align: center; /* Center text for balance */
+  font-family: Arial, sans-serif; /* Clean and modern font */
+  font-weight: 300; /* Light weight for easy reading */
+  display: flex; /* Allow for future layout flexibility */
+  flex-direction: column; /* Stack content vertically by default */
+  align-items: center; /* Center content horizontally within card */
+  justify-content: space-between; /* Distribute content vertically with some space */
+  max-width: 350px; /* Set a maximum width to prevent overflow on smaller screens */
+}
+
+/* Optional: Adjust typography for a more visually appealing look */
+.weather-card h2 {
+  font-size: 24px; /* Larger heading for prominence */
+  margin-bottom: 10px; /* Add space between heading and content */
+}
+
+.weather-card p {
+  font-size: 16px; /* Clear and readable text size */
+  line-height: 1.5; /* Increased line height for better spacing */
+}
+
+#posca {
+  height: 75%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chart-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+::ng-deep .ngx-charts-x-axis-label,
+::ng-deep .ngx-charts-y-axis-label {
+  fill: white;
+}
+
+

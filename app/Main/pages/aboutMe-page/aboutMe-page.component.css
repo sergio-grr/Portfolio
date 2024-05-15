@@ -1,0 +1,22 @@
+
+body{
+  background: linear-gradient(to bottom, #3a74fd, #50d9fc, #48eea9, #ea80ff);
+  height: 100vh;
+}
+
+
+
+.profile-pic {
+  width: 200px; /* Redimensiona la imagen de perfil */
+  border: 5px solid #fff; /* Agrega un borde blanco */
+  border-radius: 50%; /* Aplica un borde redondeado */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+h1 {
+  color: #510080; /* Cambia el color del título */
+}
+
+.lead {
+  font-size: 2.2rem; /* Ajusta el tamaño del texto */
+}

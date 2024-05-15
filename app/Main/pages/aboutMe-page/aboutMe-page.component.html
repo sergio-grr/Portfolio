@@ -1,0 +1,80 @@
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sergio Garrido</a>
+      <!-- Botón del menú desplegable -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú desplegable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProyectPage()">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" (click)="navigateToAboutMePage()">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToContactPage()">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5">
+    <div class="container">
+      <img class="profile-pic rounded-circle mb-4 " src="../../../../assets/Main/foto carnet.jpg" alt="Foto de perfil">
+      <h1 class="mb-3">Sergio Garrido</h1>
+      <p class="lead">Desarrollador Web</p>
+      <p class="lead">¡Bienvenido a mi página! Aquí podrás conocer más sobre mi historia, habilidades y proyectos destacados.</p>
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <section id="historia" class="py-5">
+      <h2>Mi Historia</h2>
+      <p>
+        Desde el año 2022, me he dedicado al desarrollo de aplicaciones web, comenzando con formación profesional en línea. He complementado mi aprendizaje con cursos adicionales, incluyendo aquellos ofrecidos por plataformas reconocidas como Udemy. He llevado a cabo prácticas laborales en la prestigiosa empresa Viewnext, donde he ampliado y fortalecido mis habilidades en un entorno laboral dinámico y desafiante.
+      </p>
+    </section>
+
+
+    <section id="habilidades" class="py-5">
+      <h2>Mis Habilidades</h2>
+      <p>
+        Destaco por mi capacidad para adaptarme a diversas circunstancias y entornos laborales, así como por mi habilidad para trabajar en equipo y fomentar un ambiente colaborativo. Me distingo por buscar constantemente un enfoque único y creativo en mi trabajo, buscando destacar y aportar un valor diferenciador en cada proyecto que emprendo.
+      </p>
+    </section>
+
+
+    <section id="proyectos" class="py-5">
+      <h2>Mis Proyectos</h2>
+      <p>
+        En mi repositorio de GitHub, encontrarás una selección de mis proyectos donde demuestro mi experiencia en el desarrollo de aplicaciones web. Cada proyecto representa un compromiso con la innovación y la excelencia técnica. ¡Te invito a explorarlos!
+      </p>
+      <a href="https://github.com/sergio-grr" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+          viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+        </svg> Visita mi GitHub</a>
+    </section>
+  </div>
+
+  <footer class="footer bg-dark text-white py-3">
+    <div class="container d-flex justify-content-center align-items-center">
+      <span>© Sergio Garrido 2024</span>
+    </div>
+  </footer>
+
+
+</body>

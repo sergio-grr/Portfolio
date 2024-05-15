@@ -1,0 +1,16 @@
+<div class="contenedor-busqueda">
+  <mat-form-field>
+    <input type="text" matInput placeholder="Buscar ciudad..." [(ngModel)]="searchText" (keyup.enter)="onSearch()">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSearch()">Buscar</button>
+</div>
+
+<div *ngIf="showElement" class="d-flex justify-content-center align-items-center">
+
+  <div>
+    <mat-card>
+        <mat-card-title class="text-center bg-black text-light">Esperando búsqueda de ciudad</mat-card-title>
+      <img mat-card-image src="../../../../assets/Weather/mapache-pedro.gif" alt="GIF">
+    </mat-card>
+  </div>
+</div>

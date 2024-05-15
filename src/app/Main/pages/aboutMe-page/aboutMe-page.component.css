@@ -1,0 +1,40 @@
+
+body{
+  background: linear-gradient(to bottom, #3a74fd, #50d9fc, #48eea9, #ea80ff);
+  height: 100vh;
+}
+
+
+
+.profile-pic {
+  width: 200px; /* Redimensiona la imagen de perfil */
+  border: 5px solid #fff; /* Agrega un borde blanco */
+  border-radius: 50%; /* Aplica un borde redondeado */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+h1 {
+  color: #a500b4;
+  font-family:Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+}
+
+.lead {
+  font-size: 2.2rem; /* Ajusta el tamaño del texto */
+}
+
+p{
+  font-size: large;
+  margin: 10px;
+}
+
+#historia,#habilidades, #proyectos{
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: 5%;
+  margin-bottom: 5%;
+  padding-inline: 1%;
+}
+
+h2{
+  margin-left: 1%;
+}

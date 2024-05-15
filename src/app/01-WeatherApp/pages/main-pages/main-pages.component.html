@@ -1,0 +1,20 @@
+<div class="fondoweather">
+  <mat-toolbar>
+    <span class="logo-container">
+      <img id="titulo" src="../../../assets/Weather/titulonav.png" class="logo-img" />
+    </span>
+
+    <span class="spacer"></span>
+    <button mat-icon-button id="home" (click)="goBack()">
+      <mat-icon>home</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="container-fluid">
+    <app-search
+      (weatherData)="handleSearchCity($event)"
+      (forecastData)="handleSearchCityForecast($event)"
+    ></app-search>
+    <app-result [weatherData]="weather"></app-result>
+    <app-graphics [forecast]="forecastData"></app-graphics>
+  </div>
+</div>

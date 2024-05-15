@@ -1,0 +1,19 @@
+<div class="modal-content">
+  <div class="country-info">
+    <h2>{{ data.name.common }}</h2>
+    <p><strong>Capital:</strong> {{ data.capital }}</p>
+    <p><strong>Población:</strong> {{ data.population | number }}</p>
+    <p><strong>Región:</strong> {{ data.region }}</p>
+    <p><strong>Monedas:</strong></p>
+    <ul>
+      <li *ngFor="let currency of getCurrencies()">{{ currency.name }} ({{ currency.symbol }})</li>
+    </ul>
+    <p><strong>Idiomas:</strong></p>
+    <ul>
+      <li *ngFor="let language of getLanguages()">{{ language.name }}</li>
+    </ul>
+  </div>
+  <div class="flag-container mb-4 d-flex justify-content-center align-items-center">
+    <img class="flag-image" [src]="data.flags.svg" alt="{{ data.name.common }} Flag">
+  </div>
+</div>

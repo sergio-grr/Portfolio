@@ -1,0 +1,23 @@
+/* Estilos específicos para las tarjetas */
+
+#fondobanderas {
+  background-image: url(../../../../assets/Flags/black\ fag.jpg);
+  background-size: contain;
+}
+
+.flag-card {
+  width: 100%; /* Ajustar el ancho de la tarjeta al 100% del contenedor */
+  height: 200px; /* Establecer una altura fija para todas las tarjetas */
+  overflow: hidden; /* Ocultar cualquier contenido que exceda la altura */
+}
+
+.flag-card img {
+  width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Ajustar la altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+  transition: transform 0.3s ease; /* Agregar animación de zoom */
+}
+
+.flag-card:hover img {
+  transform: scale(1.05); /* Zoom al pasar el cursor por encima */
+}
