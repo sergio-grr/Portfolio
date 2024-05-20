@@ -22,7 +22,7 @@ export class MapsComponent implements OnChanges, AfterViewInit {
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [-3.7038, 40.4168], // Coordenadas de Madrid
-      zoom: 5
+      zoom: 4
     });
 // el marcador por defecto
     this.marker = new mapboxgl.Marker()

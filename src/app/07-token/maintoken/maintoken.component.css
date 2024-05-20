@@ -1,0 +1,178 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 420px) {
+
+  #arcade {
+    background-image: url(../../../assets/token/fondopantalla.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-size: contain;
+  }
+  #log {
+    width: 00%; /* Maintain full width on small screens */
+    max-width: 80%; /* Remove max-width for proportional scaling */
+    margin-top: 2%;
+  }
+  #init{
+    font-size: 40px;
+  }
+  #btnplay{
+    width: 80%;
+
+  }
+}
+
+
+/* Target small screens (portrait mobile) */
+@media only screen and (max-width: 767px) {
+  #arcade {
+    background-image: url(../../../assets/token/fondopantalla.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+
+  }
+
+  #log {
+    width: 80%; /* Maintain full width on small screens */
+    max-width: 80%; /* Remove max-width for proportional scaling */
+    margin-top: 8%;
+  }
+  #btnplay {
+    width: 80%;
+  }
+
+  #init{
+    font-size: 45px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  #arcade{
+    background-image: url(../../../assets/token/fondoarcade.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+  }
+}
+
+#log {
+  width: 40%; /* Maintain full width on small screens */
+  max-width: 70%; /* Remove max-width for proportional scaling */
+  height: 25%;
+}
+#init{
+  font-size: 40px;
+}
+input{
+  height: 25px;
+}
+#btnplay{
+  width: 70%;
+}
+
+
+/* Target medium screens (landscape mobile/tablet) */
+@media only screen and (min-width: 1001px) and (max-width: 1280px) {
+  #arcade{
+    background-image: url(../../../assets/token/fondoarcade.jpg);
+    background-size: contain;
+    height:500px;
+    width: 100%;
+    background-position: center;
+    position:relative;
+    background-repeat:initial;
+  }
+  #log {
+    width: 20%;
+    height: 40px;
+    margin-top: -20px;
+  }
+  #init{
+    font-size: 30px;
+  }
+  input{
+    height: 25px;
+  }
+  #btnplay{
+    height: 35px;
+  }
+  h2{
+    color: rgb(255, 255, 255);
+    font-size:1rem;
+    text-shadow: 2px  2px 0 #000;
+  }
+}
+
+
+@media only screen and (min-width: 1281px) {
+  #arcade{
+    background-image: url(../../../assets/token/fondoarcade.jpg);
+    background-size: contain;
+    height:100vh;
+    width: 100%;
+    background-position: center;
+    position:relative;
+    background-repeat:initial;
+  }
+
+  #log {
+    width: 30%;
+    margin-top: 30px;
+  }
+  #init{
+
+    margin-top: 25px;
+    font-size: 55px;
+    margin-bottom: 80px;
+  }
+  input{
+    height: 60px;
+  }
+}
+
+
+
+h2{
+  color: rgb(248, 219, 1);
+  text-shadow: 2px  2px 1px  #000;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+
+#btnplay {
+  border-radius: 5px;
+  background-color: #dd0606;
+  border: 2px solid black;
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}

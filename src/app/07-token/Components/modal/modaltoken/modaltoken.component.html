@@ -1,0 +1,15 @@
+<div class="row modal-container">
+  <div class="col-6 modal-content d-flex flex-column justify-content-center align-items-center">
+
+    <h1>Nombre: <strong>{{ data.name }}</strong></h1>
+    <h2>País de Origen: {{ data.country }} </h2>
+    <h3>Estilo de lucha: {{ data.style }}</h3>
+    <div class="modal-actions">
+      <button class="mat-button" (click)="onNoClick()">Cerrar</button>
+    </div>
+  </div>
+  <div class="col-6 d-flex justify-content-center align-items-center">
+
+    <img [src]="data.img" alt="Imagen del jugador" class="modal-image">
+  </div>
+</div>

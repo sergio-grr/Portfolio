@@ -37,6 +37,13 @@ const routes: Routes = [
     path:'login',
     loadChildren: () => import("./05-Login/login.module").then(m => m.LoginModule )
   },{
+    path:'token',
+    loadChildren: () => import("./07-token/token.module").then(m => m.TokenModule )
+  },
+
+
+
+  {
     path: '**',
     loadChildren: () => import ("./06-error404/error404.module").then(m => m.Error404Module )
   }
