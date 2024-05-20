@@ -24,18 +24,20 @@
     </nav>
   </header>
 
-  <div id="arcade" class="d-flex justify-content-center align-items-center">
-    <div id="log" class="text-center">
-      <form>
-        <h2 id="init" class="animate__animated animate__pulse animate__infinite text-uppercase">
-        Iniciar sesión
+<!-- modeSelection.component.html -->
+<div id="arcade" class="d-flex justify-content-center align-items-center">
+  <div id="log" class="text-center">
+    <div>
+      <h2 id="init" class="animate__animated animate__pulse animate__infinite text-uppercase">
+        Modo de Juego
       </h2>
-        <input class="form-control mb-3" type="email" name="email" placeholder="Email" />
-        <input class="form-control mb-3" type="password" name="password" placeholder="Password" required />
-        <a id="btnplay" type="submit" class="btn btn-primary btn-lg btn-block text-uppercase" href="./token/menu">START</a>
-      </form>
+      <app-token-user #tokenUser></app-token-user>
+      <app-token-admin #tokenAdmin></app-token-admin>
     </div>
   </div>
+</div>
+
+<app-spinner></app-spinner>
 </body>
 </html>
 

@@ -1,5 +1,5 @@
 import { Component,} from '@angular/core';
-import { ModalTokenComponent } from '../modal/modaltoken/modaltoken.component';
+import { ModalTokenComponent } from '../../Components/modal/modaltoken/modaltoken.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({

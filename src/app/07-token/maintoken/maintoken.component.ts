@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-maintoken',
@@ -8,16 +7,5 @@ import { Router } from '@angular/router';
 })
 export class MaintokenComponent {
 
-
-  constructor(
-    private router: Router,
-
-  ) { }
-
-  navigateToMenu() {
-    this.router.navigateByUrl('/token/menu');
-  }
-
+  constructor() {}
 }
-
-
