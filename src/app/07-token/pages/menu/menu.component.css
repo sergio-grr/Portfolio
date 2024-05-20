@@ -9,8 +9,10 @@ body {
 }
 
 #img2{
-  width: 90%;
-
+  width: 99%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 #img3{
@@ -25,6 +27,8 @@ body {
 #img4{
   margin-top: 2%;
   margin-bottom: 2%;
+  max-width: 100%;
+  height: auto;
 }
 
 #description{
@@ -74,4 +78,24 @@ body {
 }
 .character__illustration {
   text-align: center;
+}
+.character__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character__illustration img {
+  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+}
+@media (min-width: 768px) {
+  .carousel-item {
+      height: 300px; /* Ajusta la altura según tus necesidades */
+  }
+
+  .carousel-caption {
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 }

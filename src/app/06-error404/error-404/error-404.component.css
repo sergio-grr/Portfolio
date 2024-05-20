@@ -1,35 +1,50 @@
+@import "https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poetsen+One&display=swap";
 
-@import  "https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poetsen+One&display=swap";
-
-body{
-  background-image: url(../../../assets/Main/404/gifFile.gif);
-  height: 100vh;
-  background-size: cover;
+body {
+    background-image: url(../../../assets/Main/404/gifFile.gif);
+    height: 100vh;
+    background-size: cover;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
-
-
-h1,h2{
-
-  margin-bottom: 5%;
-  font-size: 4rem;
+h1 {
+    margin-bottom: 10%; /* Reducido el espacio entre títulos */
+    font-size: 3rem; /* Reducido el tamaño del texto */
+    color: white;
+}
+h2 {
+  font-size: 2rem;
   color: white;
 }
-
-p{
-  font-size:2rem ;
-  font-family: "Pixelify Sans", sans-serif;
+p {
+    font-size: 1.5rem; /* Reducido el tamaño del texto */
+    margin-bottom: 2%; /* Reducido el espacio entre párrafos */
+    color: white;
 }
+
 .container {
-  margin-top: 10%;
-  font-size: 1.5rem;
-  color: white;
+    margin-top: 10%; /* Espaciado superior reducido */
+    text-align: center; /* Centrado del contenido */
 }
 
 a {
-  font-family: "Pixelify Sans", sans-serif;
- color: white;
-  text-align: center;
-  padding: 10px;
+    color: white;
+    text-decoration: none; /* Quitado el subrayado de los enlaces */
+    padding: 8px 16px; /* Reducido el espacio alrededor de los enlaces */
+    border: 2px solid white; /* Añadido borde a los enlaces */
+    border-radius: 5px; /* Añadido borde redondeado a los enlaces */
+    transition: all 0.3s ease; /* Transición suave */
 }
 
+a:hover {
+    background-color: white;
+    color: black;
+}
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  body {
+      background-size: cover;
+      background-position: center;
+  }
+
+}
