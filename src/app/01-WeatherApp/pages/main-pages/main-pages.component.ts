@@ -3,6 +3,7 @@ import { WeatherData } from '../../interfaces/weather.interface';
 import { ForecastData,  } from '../../interfaces/Forecast.interface';
 import { WeatherService } from '../../services/weather.service';
 import { MatSidenav } from '@angular/material/sidenav';
+
 @Component({
   selector: 'weather-page',
   templateUrl: './main-pages.component.html',
@@ -20,7 +21,10 @@ export class WeatherPageComponent implements OnInit {
   forecastData: ForecastData | undefined;
   error: string = '';
 
-  constructor(private weatherService: WeatherService) { }
+  constructor(
+    private weatherService: WeatherService,
+
+  ) { }
 
   ngOnInit(): void { }
 

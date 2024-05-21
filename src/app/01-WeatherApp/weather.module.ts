@@ -19,6 +19,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { WheaterRoutingModule } from './wheater-routing.module';
+import { LocationComponent } from './components/location/location/location.component';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ import { WheaterRoutingModule } from './wheater-routing.module';
     SearchComponent,
     GraphicsComponent,
     ResultComponent,
-    WeatherPageComponent
+    WeatherPageComponent,
+    LocationComponent,
+
   ],
   imports: [
     CommonModule,

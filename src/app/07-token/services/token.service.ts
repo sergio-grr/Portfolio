@@ -10,7 +10,7 @@ import { DtoResponseUserLoginToken, UserTokenLogin } from '../interfaces/userTok
 export class TokenService {
 
   userTokenLogin : UserTokenLogin | undefined
-  
+
   constructor(private http: HttpClient) { }
 
   getTokenUser(): Observable<User> {
@@ -32,10 +32,10 @@ export class TokenService {
   private handleError(error: HttpErrorResponse): Observable<never> {
     let errorMessage = 'Unknown error!';
     if (error.error instanceof ErrorEvent) {
-      // Client-side errors
+      // Client errors
       errorMessage = `Error: ${error.error.message}`;
     } else {
-      // Server-side errors
+      // Server errors
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
     window.alert(errorMessage);

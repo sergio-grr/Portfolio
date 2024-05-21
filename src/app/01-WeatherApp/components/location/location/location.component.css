@@ -1,0 +1,28 @@
+#map{
+  margin-top: 5%;
+  height: 200px;
+  width: 100%;
+
+}
+
+@media (min-width: 1200px) {
+  #map {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #map {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1800px) {
+  #home {
+    height: 700px;
+  }
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}

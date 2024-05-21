@@ -8,7 +8,7 @@ import { MunicipalityData } from '../../interfaces/community-interface';
   styleUrls: ['./maps.component.css']
 })
 export class MapsComponent implements OnChanges, AfterViewInit {
-  // rebico los datos
+  // recibo los datos
   @Input() selectedMunicipality: MunicipalityData = { mun_name: '', geo_point_2d: { lat: 0, lon: 0 } };
   map!: mapboxgl.Map;
   marker!: mapboxgl.Marker;
