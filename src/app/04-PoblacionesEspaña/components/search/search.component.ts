@@ -55,7 +55,7 @@ export class SearchComponent {
     }
   }
 
-// obtengo el municio y lo emito
+// obtengo el municipio
   getMunicipalitiesByProvince(selectedProvince: string): void {
     this.populationService.getMunicipality(selectedProvince).subscribe((data: any) => {
       if (data && data.results) {
@@ -63,7 +63,7 @@ export class SearchComponent {
       }
     });
   }
-
+// emito la selección al componente maps
   onSelectMunicipality(municipality: MunicipalityData): void {
     this.selectedMunicipality = municipality;
     this.municipalitySelected.emit(this.selectedMunicipality);
