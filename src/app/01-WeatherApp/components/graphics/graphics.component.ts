@@ -11,7 +11,7 @@ export class GraphicsComponent implements OnChanges {
   chartData: any[] = [];
   humidityChartData: any[] = [];
   colorScheme: string = 'cool';
-  currentIndex: number = 0;
+  currentIndex: number = 0; 
 
   constructor() {}
 
