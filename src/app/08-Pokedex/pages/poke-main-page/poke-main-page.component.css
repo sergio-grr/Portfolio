@@ -1,3 +1,33 @@
-#consola{
-  background-color: rgb(31, 26, 26);
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.gameboy-container {
+  position: relative;
+  width: 750px;
+}
+
+.gameboy-image {
+  width: 100%;
+  display: block;
+}
+
+.screen-container {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: 33%;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.content-frame {
+  width: 100%;
+  height: 100%;
 }
