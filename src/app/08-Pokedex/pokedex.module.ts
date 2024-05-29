@@ -6,12 +6,14 @@ import { BorderBlackComponent } from './components/border-black/border-black.com
 import { ScreenComponent } from './components/screen/screen.component';
 import { ArrowsComponent } from './components/arrows/arrows.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 
 
 @NgModule({
   declarations: [
     PokeMainPageComponent,
+    HomePageComponent,
 
     BorderYellowComponent,
     BorderBlackComponent,

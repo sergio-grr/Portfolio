@@ -9,10 +9,12 @@ button{
   background-color: red;
   margin-left: 15px;
   color: rgb(95, 1, 1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #b{
   background-color: green;
   margin-top: 35px;
   color: rgb(1, 70, 1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,19 @@
+.row
+{
+  max-width: 528px;
+  max-height: 250px;
+}
+
+.container {
+  width: 100%; /* Opcional: Puedes ajustar el ancho según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 100%; /* Opcional: Puedes ajustar el ancho máximo según sea necesario */
+  width: 80%; /* Porcentaje del ancho del componente padre */
+  padding: 20px; /* Añade relleno para separar el contenido del borde */
+  box-sizing: border-box; /* Incluye el relleno en el ancho total del elemento */
+}

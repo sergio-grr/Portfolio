@@ -1,9 +1,8 @@
 #screen{
-  background-color: white;
+  background-color: rgb(140, 241, 248);
   width: 100%;
   max-width: 528px;
-  height: 70vh;
-  max-height: 250px;
+  min-height: 100%;
 }
 
 
