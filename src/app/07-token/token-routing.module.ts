@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './pages/menu/menu.component';
 import { UserComponent } from './pages/user-page/user.component';
 import { AdminComponent } from './pages/admin-page/admin.component';
-
+import { TokenGuard } from './guards/tokenadmin.guard';
 
 const routes: Routes =[
 
@@ -19,8 +19,10 @@ const routes: Routes =[
     component: UserComponent,
   },{
     path: 'admin',
-    component: AdminComponent
-  }
+    component: AdminComponent, canActivate: [
+       TokenGuard
+    ]
+  },
 
 
 

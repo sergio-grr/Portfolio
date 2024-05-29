@@ -22,6 +22,7 @@ export class TokenAdminComponent {
         console.log('Admin Token:', data.result.token);
         localStorage.setItem('token', data.result.token);
         this.router.navigateByUrl('/token/menu');
+
       },
       (error: any) => {
         console.error('Login error:', error);

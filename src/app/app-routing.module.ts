@@ -40,6 +40,10 @@ const routes: Routes = [
     path:'token',
     loadChildren: () => import("./07-token/token.module").then(m => m.TokenModule )
   },
+  {
+    path:'pokedex',
+    loadChildren: () => import("./08-Pokedex/pokedex.module").then(m => m.PokedexModule )
+  },
 
 
 
