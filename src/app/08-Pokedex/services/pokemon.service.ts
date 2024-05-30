@@ -3,8 +3,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { PokemonData } from '../interfaces/pokemondata.interface';
+
 import { PokemonAllData, PokemonResponseList } from '../interfaces/PokemonAllData';
+import { PokemonData } from '../interfaces/PokemonData';
 
 
 
@@ -15,7 +16,7 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   getListPokemon(url?: string): Observable<PokemonResponseList> {
-    
+    console.log(url);
     if(url!==undefined){
 
      return this.http.get<PokemonResponseList>(url)

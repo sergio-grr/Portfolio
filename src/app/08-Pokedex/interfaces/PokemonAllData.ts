@@ -1,4 +1,4 @@
-import { Sprites, Type } from "./pokemondata.interface";
+import { Type } from "./PokemonData";
 
 
 // pokemondata.interface.ts
@@ -11,7 +11,8 @@ interface Result {
 export interface PokemonAllData {
   name: string,
   sprite: string,
-  type: Type[]
+  type: Type[],
+  
 }
 
 export interface PokemonResponseList{
