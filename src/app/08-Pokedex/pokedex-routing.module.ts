@@ -1,21 +1,25 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PokeMainPageComponent } from './pages/poke-main-page/poke-main-page.component';
+
 import { Path } from 'leaflet';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { PokedexPageComponent } from './pages/pokedex-page/pokedex-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 
 const routes: Routes =[
 
   {
     path: '',
-    component: PokeMainPageComponent
-  }, {
-    path: 'home',
-    component: HomePageComponent
+    component:HomePageComponent
+  },{
+  path: 'login',
+  component:LoginPageComponent
+},  {
+    path: 'pokedex',
+    component:PokedexPageComponent
   },
-
 
 
 
