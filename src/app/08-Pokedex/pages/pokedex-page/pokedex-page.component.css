@@ -19,9 +19,9 @@ img{
   height: auto;
 }
 
-#pokemons{
+#img{
   background-image: url(../../../../assets/pokedex/pokeball.png);
-  background-size: contain;
+  background-size:250px;
   position: center;
   background-repeat: no-repeat;
 }

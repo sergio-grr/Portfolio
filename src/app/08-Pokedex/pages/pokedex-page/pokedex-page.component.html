@@ -5,7 +5,8 @@
   <div class="row">
     @for (item of allDataPokemon; track $index) {
       <div   id="pokemons" class="col-md-4 mb-4 mt-4 pb-5">
-        <h1>{{item.name}}</h1>
+        <h1 class="text-uppercase">{{item.name}}</h1>
+        <hr>
         <img [src]="item.sprite" class="img-fluid" alt="{{item.name}}">
       </div>
     }
