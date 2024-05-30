@@ -28,7 +28,7 @@ export class LogComponent {
         backdrop: `
           rgba(0, 0, 0, 0.4)
           url(../../../../assets/pokedex/gengar.gif)
-          bottom center
+       center bottom
           no-repeat
         `
       });

@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LogComponent } from './components/log/log.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -27,7 +28,7 @@ import { CommonModule } from '@angular/common';
     PokedexRoutingModule,
     FormsModule,
     CommonModule,
-
+    InfiniteScrollModule
   ],
   exports: [
     HomePageComponent

@@ -1,9 +1,10 @@
+;
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { PokemonData, PokemonResult } from '../interfaces/pokemondata.interface';
-
+import { PokemonData } from '../interfaces/pokemondata.interface';
+import { PokemonAllData, PokemonResponseList } from '../interfaces/PokemonAllData';
 
 
 
@@ -13,10 +14,20 @@ export class PokemonService {
 
   constructor(private http: HttpClient) { }
 
-  getListPokemon(): Observable<PokemonResult[]> {
-    return this.http.get<PokemonData>(this.API_URL)
-      .pipe(
-        map((data: PokemonData) => data.results)
-      );
+  getListPokemon(url?: string): Observable<PokemonResponseList> {
+    
+    if(url!==undefined){
+
+     return this.http.get<PokemonResponseList>(url)
+    }
+
+    return this.http.get<PokemonResponseList>(this.API_URL)
+
+
+  }
+
+  getData(url:string) : Observable<PokemonData>{
+
+      return this.http.get<PokemonData>(url)
   }
 }

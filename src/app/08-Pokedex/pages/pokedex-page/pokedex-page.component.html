@@ -1,2 +1,14 @@
 <navbar></navbar>
 
+
+<div class="container text-center mt-5">
+  <div class="row">
+    @for (item of allDataPokemon; track $index) {
+      <div   id="pokemons" class="col-md-4 mb-4 mt-4 pb-5">
+        <h1>{{item.name}}</h1>
+        <img [src]="item.sprite" class="img-fluid" alt="{{item.name}}">
+      </div>
+    }
+  </div>
+</div>
+<div class="infiniteScroll" infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="3" (scrolled)="getPokemons()"></div>

@@ -1,0 +1,27 @@
+
+
+@import url( https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap);
+
+
+
+.infiteScroll
+{
+  display: flex;
+}
+
+
+h1{
+  font-family: "Pixelify Sans";
+}
+
+img{
+  width: 250px;
+  height: auto;
+}
+
+#pokemons{
+  background-image: url(../../../../assets/pokedex/pokeball.png);
+  background-size: contain;
+  position: center;
+  background-repeat: no-repeat;
+}
