@@ -1,15 +1,14 @@
 <navbar></navbar>
-
-
+<search-bar></search-bar>
+<order-bar></order-bar>
 <div class="container text-center mt-5">
   <div class="row">
-    @for (item of allDataPokemon; track $index) {
-      <div   id="pokemons" class="col-md-4 mb-4 mt-4 pb-5">
-        <h1 class="text-uppercase">{{item.name}}</h1>
-        <hr>
-        <img [src]="item.sprite" class="img-fluid" alt="{{item.name}}">
-      </div>
-    }
+    <div *ngFor="let item of allDataPokemon; let i = index" id="pokemons" class="col-md-4 mb-4 mt-4 pb-5">
+      <h1 class="text-uppercase">{{item.name}}</h1>
+      <hr>
+      <img [src]="item.sprite" class="img-fluid" alt="{{item.name}}">
+      <button class="btn btn-primary mt-2" (click)="openDialog(item)">Ver Detalles</button>
+    </div>
   </div>
 </div>
 <div class="infiniteScroll" infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="3" (scrolled)="getPokemons()"></div>

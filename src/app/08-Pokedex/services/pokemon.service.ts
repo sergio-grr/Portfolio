@@ -16,7 +16,6 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   getListPokemon(url?: string): Observable<PokemonResponseList> {
-    console.log(url);
     if(url!==undefined){
 
      return this.http.get<PokemonResponseList>(url)

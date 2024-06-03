@@ -11,6 +11,9 @@ import { LogComponent } from './components/log/log.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { OrderComponent } from './components/order/order.component';
+import { ModalPokemonComponent } from './components/modal-pokemon/modal-pokemon.component';
 
 
 
@@ -21,14 +24,18 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     LoginPageComponent,
 
     NavbarComponent,
-    LogComponent
+    LogComponent,
+    SearchBarComponent,
+    OrderComponent,
+    ModalPokemonComponent
 
   ],
   imports: [
     PokedexRoutingModule,
     FormsModule,
     CommonModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    
   ],
   exports: [
     HomePageComponent

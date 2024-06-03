@@ -1,0 +1,180 @@
+
+
+@import url( https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap);
+
+
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.74); /* Fondo semitransparente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Pixelify Sans"
+}
+
+.modal-content {
+  margin-left: 50px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 35%;
+}
+
+.modal-content, h1{
+  font-size: 2rem;
+}
+
+.modal-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #27b7fa;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #f13232;
+}
+
+strong {
+  color: #00ff95;
+}
+.modal-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 767px) {
+  .modal-image {
+    display: none;
+  }
+}
+
+
+h1, h3{
+  font-family: "Pixelify Sans"
+}
+
+#fondopokemon{
+background-image: url(../../../../assets/pokedex/pokeball.png);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  #fondopokemon{
+    display: none;
+
+  }
+
+}
+
+
+.typeimg {
+
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+/* Estilos específicos para cada tipo */
+img[src*='grass'] {
+  padding: 10px;
+  background-color: #70e933;
+}
+
+img[src*='fire'] {
+  padding: 10px;
+  background-color: #f56f10;
+}
+img[src*='water'] {
+  padding: 10px;
+  background-color: #6890f0;
+}
+
+img[src*='bug'] {
+  padding: 10px;
+  background-color: #4e8334;
+}
+
+img[src*='normal'] {
+  padding: 10px;
+  background-color: #575757;
+}
+img[src*='electric'] {
+  padding: 10px;
+  background-color: #f7f32e;
+}
+
+img[src*='ground'] {
+  padding: 10px;
+  background-color: #924c13;
+}
+
+img[src*='fairy'] {
+  padding: 10px;
+  background-color: #fd87ea;
+}
+img[src*='fighting'] {
+  padding: 10px;
+  background-color: #cc1d06;
+}
+
+img[src*='psychic'] {
+  padding: 10px;
+  background-color: #8d2980;
+}
+
+img[src*='rock'] {
+  padding: 10px;
+  background-color: #6d4511;
+}
+img[src*='ghost'] {
+  padding: 10px;
+  background-color: #39176e;
+}
+
+img[src*='ice'] {
+  padding: 10px;
+  background-color: #5ea0ec;
+}
+
+img[src*='dragon'] {
+  padding: 10px;
+  background-color: #3103ff8a;
+}
+img[src*='dark'] {
+  padding: 10px;
+  background-color: #000000;
+}
+
+img[src*='steel'] {
+  padding: 10px;
+  background-color: #7a7a7a;
+}
+
+img[src*='poison'] {
+  padding: 10px;
+  background-color: #5b00ec;
+}
+img[src*='flying'] {
+  padding: 10px;
+  background-color: #7ed6ff;
+}
+
+

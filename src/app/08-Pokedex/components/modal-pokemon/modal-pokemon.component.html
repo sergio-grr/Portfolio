@@ -1,0 +1,49 @@
+<div class="row modal-container text-center">
+  <div class="col-6 modal-content d-flex flex-column justify-content-center align-items-center">
+    <h1>Nombre: <strong class="text-uppercase">{{ data.name }}</strong></h1>
+    <h3>Tipo:
+      <span *ngFor="let type of data.types; let last = last">
+        {{ translateTypeName(type.type.name) }}{{ last ? '' : ', ' }}
+      </span>
+      <ng-container *ngIf="data.types">
+        <ng-container *ngFor="let type of data.types">
+          <img *ngIf="type.type.name === 'grass'" src="../../../../assets/pokedex/svg/grass.svg" alt="Hierba" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'fire'" src="../../../../assets/pokedex/svg/fire.svg" alt="Fuego" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'water'" src="../../../../assets/pokedex/svg/water.svg" alt="Agua" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'bug'" src="../../../../assets/pokedex/svg/bug.svg" alt="Bicho" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'normal'" src="../../../../assets/pokedex/svg/normal.svg" alt="Normal" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'electric'" src="../../../../assets/pokedex/svg/electric.svg" alt="Eléctrico" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'ground'" src="../../../../assets/pokedex/svg/ground.svg" alt="Tierra" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'fairy'" src="../../../../assets/pokedex/svg/fairy.svg" alt="Hada" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'fighting'" src="../../../../assets/pokedex/svg/fighting.svg" alt="Lucha" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'psychic'" src="../../../../assets/pokedex/svg/psychic.svg" alt="Psíquico" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'rock'" src="../../../../assets/pokedex/svg/rock.svg" alt="Roca" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'ghost'" src="../../../../assets/pokedex/svg/ghost.svg" alt="Fantasma" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'ice'" src="../../../../assets/pokedex/svg/ice.svg" alt="Hielo" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'dragon'" src="../../../../assets/pokedex/svg/dragon.svg" alt="Dragón" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'dark'" src="../../../../assets/pokedex/svg/dark.svg" alt="Siniestro" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'steel'" src="../../../../assets/pokedex/svg/steel.svg" alt="Acero" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'poison'" src="../../../../assets/pokedex/svg/poison.svg" alt="Veneno" class="modal-image typeimg">
+          <img *ngIf="type.type.name === 'flying'" src="../../../../assets/pokedex/svg/flying.svg" alt="Volador" class="modal-image typeimg">
+
+        </ng-container>
+      </ng-container>
+
+    </h3>
+
+    <h3>Altura: {{ data.height / 10 }} m</h3>
+    <h3>Peso: {{ data.weight / 10 }} kg</h3>
+    <h3>Habilidades:
+      <span *ngFor="let ability of data.abilities; let last = last">
+        {{ ability.ability.name }}{{ last ? '' : ', ' }}
+      </span>
+    </h3>
+    <h3>Orden: {{ data.order }}</h3>
+    <div class="modal-actions">
+      <button class="btn" (click)="onNoClick()">Cerrar</button>
+    </div>
+  </div>
+  <div id="fondopokemon" class="col-6 d-flex justify-content-center align-items-center">
+    <img [src]="data.sprite" alt="{{ data.name }}" class="modal-image">
+  </div>
+</div>
