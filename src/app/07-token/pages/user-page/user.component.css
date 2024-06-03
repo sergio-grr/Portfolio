@@ -1,26 +1,41 @@
+@font-face {
+  font-family: 'Chaser';
+  src: url('../../../../assets/token/CHASER.ttf') format('woff');
+}
+
 body {
 
   background-image: linear-gradient(to right, #992424, #1d1212, #000000, #0c0808, #0f0f5a);
   height: 100vh;
+  justify-content: center;
+
 }
 
-.cardbody{
-  margin-right: 5%;
-  margin-left: 5%;
-}
+
 
 .tarjeta{
   position: relative;
-  width: 300px;
+  width: 220px;
   height: 300px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-left: 30px;
 }
+
+
+
+.player-img:hover {
+  transform: scale(1.1); /
+}
+
 
 .fondoplayer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 300px;
   z-index: 1;
 }
 
@@ -28,10 +43,16 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
-  height: 375;
+  width: 100%;
+  height: 250px;
   z-index: 2;
 }
-.player-img:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+.text {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  z-index: 3;
+  font-family: 'Chaser';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
+  color: #ffd700; /* Degradado de color oro */
 }

@@ -1,0 +1,244 @@
+{
+  "fighters": [
+    {
+      "id": "alisa-bosconovitch",
+      "name": "Alisa Bosconovitch",
+      "country": "Rusia",
+      "style": "Estilo de lucha de alta movilidad basado en propulsores",
+      "img": "/assets/token/luchadores/Alisa_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "asuka-kazama",
+      "name": "Asuka Kazama",
+      "country": "Japón",
+      "style": "Artes marciales tradicionales estilo Kazama",
+      "img": "/assets/token/luchadores/Asuka_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "azucena-ortiz",
+      "name": "Azucena Milagros Ortiz Castillo",
+      "country": "Ecuador",
+      "style": "Artes marciales mixtas (luchadora)",
+      "img": "/assets/token/luchadores/Azucena_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "bryan-fury",
+      "name": "Bryan Fury",
+      "country": "EE.UU",
+      "style": "Kickboxing",
+      "img": "/assets/token/luchadores/Bryan-Fury_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "claudio-serafino",
+      "name": "Claudio Serafino",
+      "country": "Italia",
+      "style": "Técnicas del exorcismo al estilo Sirius",
+      "img": "/assets/token/luchadores/Claudio-Serafino_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "eddy-gordo",
+      "name": "Eddy Gordo",
+      "country": "Brasil",
+      "style": "Capoeira",
+      "img": "/assets/token/luchadores/eddy.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "feng-wei",
+      "name": "Feng Wei",
+      "country": "China",
+      "style": "Kung-fu",
+      "img": "/assets/token/luchadores/Feng-Wei_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "hwoarang",
+      "name": "Hwoarang",
+      "country": "Corea",
+      "style": "Taekwondo",
+      "img": "/assets/token/luchadores/Hwoarang_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "jack-8",
+      "name": "Jack-8",
+      "country": "Desconocido",
+      "style": "Fuerza bruta",
+      "img": "/assets/token/luchadores/Jack-8_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "jin-kazama",
+      "name": "Jin Kazama",
+      "country": "Japón",
+      "style": "Kárate",
+      "img": "/assets/token/luchadores/JIN_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "kazuya-mishima",
+      "name": "Kazuya Mishima",
+      "country": "Desconocido",
+      "style": "Kárate estilo Mishima",
+      "img": "/assets/token/luchadores/Kazuya-Mishima_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "king",
+      "name": "King",
+      "country": "México",
+      "style": "Lucha libre profesional",
+      "img": "/assets/token/luchadores/King_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "kuma",
+      "name": "Kuma",
+      "country": "Heihachi-Style Advanced Kuma Shin Ken",
+      "style": "Artes marciales chinas basadas en Baguazhang y Piguaquan",
+      "img": "/assets/token/luchadores/Kuma_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "lars-alexandersson",
+      "name": "Lars Alexandersson",
+      "country": "Suecia",
+      "style": "Artes marciales de la Tekken Force",
+      "img": "/assets/token/luchadores/Lars-Alexandersson_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "lee-chaolan",
+      "name": "Lee Chaolan",
+      "country": "Japón",
+      "style": "Artes marciales",
+      "img": "/assets/token/luchadores/lee_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "country": "Germany",
+      "style": "Bajiquan",
+      "img": "/assets/token/luchadores/Leo_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "leroy-smith",
+      "name": "Leroy Smith",
+      "country": "EE.UU",
+      "style": "Wing Chun",
+      "img": "/assets/token/luchadores/Leroy-Smith_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "lili",
+      "name": "Lili",
+      "country": "Mónaco",
+      "style": "Lucha callejera",
+      "img": "/assets/token/luchadores/Lili_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "ling-xiaoyu",
+      "name": "Ling Xiaoyu",
+      "country": "China",
+      "style": "Artes marciales chinas basadas en Baguazhang y Piguaquan",
+      "img": "/assets/token/luchadores/Ling-Xiaoyu_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "marshall-law",
+      "name": "Marshall Law",
+      "country": "Estados Unidos",
+      "style": "Artes marciales",
+      "img": "/assets/token/luchadores/Marshall-Law_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "nina-williams",
+      "name": "Nina Williams",
+      "country": "Irlanda",
+      "style": "Arte del asesinato",
+      "img": "/assets/token/luchadores/Nina-Williams_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "paul-phoenix",
+      "name": "Paul Phoenix",
+      "country": "EE.UU",
+      "style": "Mezcla de artes marciales basada en el judo",
+      "img": "/assets/token/luchadores/Paul-Phoenix_new_2.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "raven",
+      "name": "Raven",
+      "country": "Desconocido",
+      "style": "Ninjitsu",
+      "img": "/assets/token/luchadores/Raven_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "reina",
+      "name": "Reina",
+      "country": "Desconocido",
+      "style": "Desconocido",
+      "img": "/assets/token/luchadores/Reina_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "sergei-dragunov",
+      "name": "Sergei Dragunov",
+      "country": "Rusia",
+      "style": "Combat Sambo",
+      "img": "/assets/token/luchadores/Sergei-Dragunov_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "shaheen",
+      "name": "Shaheen",
+      "country": "Saudi Arabia",
+      "style": "Close Quarters Combat",
+      "img": "/assets/token/luchadores/Shaheen_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "steve-fox",
+      "name": "Steve Fox",
+      "country": "UK",
+      "style": "Boxing",
+      "img": "/assets/token/luchadores/Steve-Fox_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "victor-chevalier",
+      "name": "Victor Chevalier",
+      "country": "Francia",
+      "style": "Combate cuerpo a cuerpo de superespía",
+      "img": "/assets/token/luchadores/Victor-Chevalier_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "yoshimitsu",
+      "name": "Yoshimitsu",
+      "country": "Desconocido",
+      "style": "Manji Ninja Arts",
+      "img": "/assets/token/luchadores/Yoshimitsu_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "zafina",
+      "name": "Zafina",
+      "country": "Desconocido",
+      "style": "Artes ancestrales de asesinato",
+      "img": "/assets/token/luchadores/Zafina_new.png",
+      "background":"/assets/token/fondoplayer.png"
+    }
+  ]
+}

@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { OrderComponent } from './components/order/order.component';
 import { ModalPokemonComponent } from './components/modal-pokemon/modal-pokemon.component';
 
 
@@ -26,7 +25,6 @@ import { ModalPokemonComponent } from './components/modal-pokemon/modal-pokemon.
     NavbarComponent,
     LogComponent,
     SearchBarComponent,
-    OrderComponent,
     ModalPokemonComponent
 
   ],
@@ -35,7 +33,7 @@ import { ModalPokemonComponent } from './components/modal-pokemon/modal-pokemon.
     FormsModule,
     CommonModule,
     InfiniteScrollModule,
-    
+
   ],
   exports: [
     HomePageComponent

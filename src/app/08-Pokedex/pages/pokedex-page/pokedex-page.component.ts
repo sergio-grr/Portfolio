@@ -80,4 +80,6 @@ export class PokedexPageComponent implements OnInit {
       data: pokemonData
     });
   }
+
+
 }

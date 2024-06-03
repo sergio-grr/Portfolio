@@ -1,3 +1,8 @@
 input{
   border: 1px solid red;
 }
+
+.btn{
+  background: linear-gradient(to bottom, #fd0101, #990000);
+  color: white;
+}

@@ -1,6 +1,7 @@
 <navbar></navbar>
 <search-bar></search-bar>
-<order-bar></order-bar>
+<body>
+
 <div class="container text-center mt-5">
   <div class="row">
     <div *ngFor="let item of allDataPokemon; let i = index" id="pokemons" class="col-md-4 mb-4 mt-4 pb-5">
@@ -12,3 +13,4 @@
   </div>
 </div>
 <div class="infiniteScroll" infinite-scroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="3" (scrolled)="getPokemons()"></div>
+</body>

@@ -13,9 +13,12 @@ import { FormsModule } from '@angular/forms';
 import { TokenAdminComponent } from './Components/tokenAdmin/tokenAdmin/tokenAdmin.component';
 import { TokenUserComponent } from './Components/tokenUser/tokenUser/tokenUser.component';
 import { JwtInterceptor } from './services/interceptor/jwt.interceptor.service';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './Components/navBar/navBar.component';
 import { SpinnerComponent } from './Components/spinner/spinner/spinner.component';
+
+import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
+import { CardComponent } from '@swimlane/ngx-charts';
 
 
 @NgModule({
@@ -28,7 +31,9 @@ import { SpinnerComponent } from './Components/spinner/spinner/spinner.component
     TokenAdminComponent,
     TokenUserComponent,
     NavBarComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AddCharacterPageComponent,
+
 
   ],
   imports: [
@@ -36,6 +41,7 @@ import { SpinnerComponent } from './Components/spinner/spinner/spinner.component
     TokenRoutingModule,
     MatDialogModule,
     FormsModule,
+    HttpClientModule
 
   ],
   exports: [

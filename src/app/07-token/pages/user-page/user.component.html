@@ -1,8 +1,24 @@
 <body>
 
-<app-navBar></app-navBar>
+  <app-navBar></app-navBar>
 
 
+    <div class="container justify-content-center align-items-center">
+      <div class="row cardbody text-center">
+        <div class="mt-5 tarjeta" *ngFor="let fighter of fighters">
+          <div class="tarjeta">
+            <img class="fondoplayer" src="{{ fighter.background }}" alt="Fondo del jugador">
+            <img class="player-img" src="{{ fighter.img }}" alt="{{ fighter.name }}">
+            <h1 class="text mt-3">{{ fighter.name }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <!--
 
   <div class="cardbody row mt-5">
 
@@ -328,6 +344,6 @@
 
 
 
-  </div>
+  </div> -->
 
 </body>
