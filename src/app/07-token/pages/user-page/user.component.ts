@@ -21,12 +21,20 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     this.charactersService.getCharacters()
-      .subscribe(fighters => this.fighters = fighters );
+      .subscribe(fighters => this.fighters = fighters);
   }
 
-  openDialog(playerData: { name: string; country: string; style: string; img: string }): void {
-    this.dialog.open(ModalTokenComponent, {
-      data: playerData
+  openDialog(fighter: Fighters): void {
+    console.log('Datos del luchador recibidos:', fighter); // Agrega este log para verificar los datos
+    const dialogRef = this.dialog.open(ModalTokenComponent, {
+      data: { fighter } // Pasa los datos del luchador al modal
     });
   }
 }
+
+// openDialog(playerData: { name: string; country: string; style: string; img: string }): void {
+//   this.dialog.open(ModalTokenComponent, {
+//     data: playerData
+//   });
+// }
+

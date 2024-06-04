@@ -2,7 +2,7 @@
   "fighters": [
     {
       "id": "alisa-bosconovitch",
-      "name": "Alisa Bosconovitch",
+      "name": "Alisa ",
       "country": "Rusia",
       "style": "Estilo de lucha de alta movilidad basado en propulsores",
       "img": "/assets/token/luchadores/Alisa_new.png",
@@ -18,7 +18,7 @@
     },
     {
       "id": "azucena-ortiz",
-      "name": "Azucena Milagros Ortiz Castillo",
+      "name": "Azucena Castillo",
       "country": "Ecuador",
       "style": "Artes marciales mixtas (luchadora)",
       "img": "/assets/token/luchadores/Azucena_new.png",
@@ -106,7 +106,7 @@
     },
     {
       "id": "lars-alexandersson",
-      "name": "Lars Alexandersson",
+      "name": "Lars",
       "country": "Suecia",
       "style": "Artes marciales de la Tekken Force",
       "img": "/assets/token/luchadores/Lars-Alexandersson_new.png",

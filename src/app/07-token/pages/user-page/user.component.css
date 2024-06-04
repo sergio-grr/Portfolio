@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'Chaser';
-  src: url('../../../../assets/token/CHASER.ttf') format('woff');
+  font-family: target;
+  src: url('../../../../assets/token/tarrgetexpand.ttf');
 }
+
 
 body {
 
@@ -20,7 +21,6 @@ body {
   margin-top: 15px;
   margin-bottom: 20px;
   padding: 10px;
-  margin-left: 30px;
 }
 
 
@@ -37,9 +37,12 @@ body {
   width: 100%;
   height: 300px;
   z-index: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .player-img {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -47,12 +50,20 @@ body {
   height: 250px;
   z-index: 2;
 }
-.text {
+
+
+#name{
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 70%;
-  width: 100%;
+  top: 65%;
+  width: 170px;
+  height: 60px;
   z-index: 3;
-  font-family: 'Chaser';
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
-  color: #ffd700; /* Degradado de color oro */
+  font-family: "target";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f7bf0a;
+  margin-left: 12px;
+  font-size: 1.2rem;
+  white-space: break-word;
+  border-radius: 5%;
 }
