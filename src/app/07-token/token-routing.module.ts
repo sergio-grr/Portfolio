@@ -5,7 +5,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { UserComponent } from './pages/user-page/user.component';
 import { AdminComponent } from './pages/admin-page/admin.component';
 import { TokenGuard } from './guards/tokenadmin.guard';
-import { AddComponent } from '../03-TaskList/components/add/add.component';
+
 import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
 
 const routes: Routes =[
@@ -30,6 +30,7 @@ const routes: Routes =[
        TokenGuard
     ]
   },
+
 
 
 

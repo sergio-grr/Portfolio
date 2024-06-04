@@ -1,14 +1,12 @@
-<div class="row modal-container">
-  <div *ngFor="let fighter of fighters" class="col-6 modal-content d-flex flex-column justify-content-center align-items-center">
-
-
+<div class="modal-container">
+  <div class="modal-content">
     <h1>Nombre: <strong>{{ fighter.name }}</strong></h1>
-    <h2>Id: <strong>{{fighter.id}}</strong></h2>
-    <h3>País de Origen: {{ fighter.country }} </h3>
+    <h2>Id: <strong>{{ fighter.id }}</strong></h2>
+    <h3>País de Origen: {{ fighter.country }}</h3>
     <h3>Estilo de lucha: {{ fighter.style }}</h3>
     <div class="modal-actions">
       <button class="btn" (click)="onNoClick()">Cerrar</button>
     </div>
-    <img  src="{{ fighter.img }}" alt="Imagen del jugador" class="modal-image">
+    <img src="{{ fighter.img }}" alt="Imagen del jugador" class="modal-image">
   </div>
 </div>

@@ -17,19 +17,32 @@ export class UserComponent implements OnInit {
   constructor(
     public dialog: MatDialog,
     private charactersService: CharactersService,
-  ) { }
+  )
+  { this.loadFighters();
+
+  }
 
   ngOnInit(): void {
     this.charactersService.getCharacters()
       .subscribe(fighters => this.fighters = fighters);
   }
 
-  openDialog(fighter: Fighters): void {
-    console.log('Datos del luchador recibidos:', fighter); // Agrega este log para verificar los datos
-    const dialogRef = this.dialog.open(ModalTokenComponent, {
-      data: { fighter } // Pasa los datos del luchador al modal
+  loadFighters(): void {
+    this.charactersService.getCharacters().subscribe((fighters: Fighters[]) => {
+      this.fighters = fighters;
     });
   }
+  openDialog(fighter: Fighters): void {
+    const dialogRef = this.dialog.open(ModalTokenComponent, {
+      data: fighter
+    });
+
+
+  }
+
+
+
+
 }
 
 // openDialog(playerData: { name: string; country: string; style: string; img: string }): void {

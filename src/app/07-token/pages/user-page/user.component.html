@@ -1,26 +1,21 @@
 <body>
-
   <app-navBar></app-navBar>
-
-
-    <div class="container">
-      <div class="row justify-content-center align-items-center container">
-        <div class="mt-5 tarjeta " *ngFor="let fighter of fighters">
-
-          <div class="tarjeta text-center">
-            <img class="fondoplayer" src="{{ fighter.background }}" alt="Fondo del jugador">
-            <img class="player-img" src="{{ fighter.img }}" alt="{{ fighter.name }}" (click)="openDialog(fighter)">
+  <div class="container">
+    <div class="row justify-content-center align-items-center container">
+      <div class="mt-5 tarjeta" *ngFor="let fighter of fighters">
+        <div class="tarjeta text-center">
+          <img class="fondoplayer" src="{{ fighter.background }}" alt="Fondo del jugador">
+          <img class="player-img" src="{{ fighter.img }}" alt="{{ fighter.name }}" (click)="openDialog(fighter)">
           <h1 id="name" class="text-center mt-3">{{ fighter.name }}</h1>
-          </div>
         </div>
       </div>
     </div>
-
+  </div>
 </body>
 
 
 
-
+<!--  -->
 <!--
   < class="cardbody row mt-5">
 

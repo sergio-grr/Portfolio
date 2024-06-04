@@ -1,4 +1,3 @@
-// player-modal.component.ts
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Fighters } from '../../../interfaces/characters.interface';
@@ -10,17 +9,11 @@ import { CharactersService } from '../../../services/characters.service';
   styleUrls: ['./modaltoken.component.css']
 })
 export class ModalTokenComponent {
-
-  public fighters: Fighters[] = [];
-  private charactersService: CharactersService | undefined;
-
   constructor(
     public dialogRef: MatDialogRef<ModalTokenComponent>,
-    @Inject(MAT_DIALOG_DATA) public fightersData: Fighters[]
-  ) {};
+    @Inject(MAT_DIALOG_DATA) public fighter: Fighters
+  ) {}
 
-
-  
   onNoClick(): void {
     this.dialogRef.close();
   }
