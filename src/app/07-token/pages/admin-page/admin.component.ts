@@ -10,9 +10,6 @@ export class AdminComponent {
 
   constructor() { }
 
-  toggleCards() {
-    this.showCards = !this.showCards;
-  }
 
 }
 

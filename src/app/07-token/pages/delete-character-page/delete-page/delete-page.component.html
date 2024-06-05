@@ -1,0 +1,16 @@
+<body>
+  <app-navBar></app-navBar>
+  <div class="container">
+    <div class="row justify-content-center align-items-center container">
+      <div class="mt-5 tarjeta" *ngFor="let fighter of fighters">
+        <div class="tarjeta text-center">
+          <img class="fondoplayer" src="{{ fighter.background }}" alt="Fondo del jugador">
+          <img class="player-img" src="{{ fighter.img }}" alt="{{ fighter.name }}" >
+          <h1 id="name" class="text-center mt-3">{{ fighter.name }}</h1>
+
+          <button (click)="onDeleteHero(fighter.id)" class="btn btn-danger text-center mt-2">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

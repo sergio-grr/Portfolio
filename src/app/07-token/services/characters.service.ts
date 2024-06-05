@@ -27,21 +27,15 @@ export class CharactersService {
   }
 
 
-  updateCharacter(fighters: Fighters): Observable<Fighters> {
-
-    if (!fighters.id) throw Error('Hero id is required');
-
-    return this.http.patch<Fighters>(`${this.baseUrl}/fighters/${fighters.id}`, fighters);
-  }
 
 
 
-  deleteCharacterById(id: string): Observable<Boolean> {
-
+  deleteCharacterById(id: string): Observable<boolean> {
     return this.http.delete(`${this.baseUrl}/fighters/${id}`)
       .pipe(
-        catchError(err => of(false)),
-        map(resp => true)
+        map(() => true),
+        catchError(err => of(false))
       );
   }
+
 }

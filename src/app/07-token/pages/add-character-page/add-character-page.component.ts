@@ -1,58 +1,83 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CharactersService } from '../../services/characters.service';
 import { Fighters } from '../../interfaces/characters.interface';
-isNaN
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-add-character-page',
   templateUrl: './add-character-page.component.html',
   styleUrls: ['./add-character-page.component.css']
 })
-export class AddCharacterPageComponent  {
+export class AddCharacterPageComponent {
 
   public characterForm = new FormGroup({
-
-    id:         new FormControl (''),
-    name:       new FormControl (''),
-    country:    new FormControl (''),
-    style:      new FormControl (''),
-    img:        new FormControl (''),
-    background: new FormControl ('')
+    id: new FormControl('', Validators.required),
+    name: new FormControl('', Validators.required),
+    country: new FormControl('', Validators.required),
+    style: new FormControl('', Validators.required),
+    img: new FormControl('', Validators.required),
+    background: new FormControl('', Validators.required),
   });
 
+  constructor(private characterService: CharactersService) { }
 
-  constructor(
-    private characterService: CharactersService
-
-  ){}
   get currentFighter(): Fighters {
-    const fighers = this.characterForm.value as Fighters;
-    return fighers;
+    return this.characterForm.value as Fighters;
   }
 
-  onSubmit():void{
 
-    if( this.characterForm.invalid) return;
+  onSubmit(): void {
+    if (this.characterForm.invalid) return;
 
-    if( this.currentFighter.id) {
-        this.characterService.addCharacter ( this.currentFighter)
-        .subscribe( fighters => {
-          //TODO:mostrar snakbars
-        });
 
-        return;
+    if (this.currentFighter.id) {
+      this.characterService.getCharactersById(this.currentFighter.id).subscribe(existingFighter => {
+        if (existingFighter) {
+          Swal.fire({
+            position: "top",
+            icon: "error",
+            title: "El personaje ya existe",
+            showConfirmButton: false,
+            timer: 2500,
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          });
+        } else {
+          this.addCharacter();
+        }
+      });
     }
+  }
 
-    this.characterService.addCharacter(this.currentFighter)
-    .subscribe( fighters => {
-      //TODO:mostrar snakbars de que se ha creado bien
+  private addCharacter(): void {
+    this.characterService.addCharacter(this.currentFighter).subscribe(() => {
+      this.showSuccessAlert();
+      this.resetForm();
     });
+  }
 
+  private showSuccessAlert(): void {
+    Swal.fire({
+      position: "top",
+      icon: "success",
+      title: "Personaje añadido",
+      showConfirmButton: false,
+      timer: 2500,
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    });
+  }
 
-
+  private resetForm(): void {
+    this.characterForm.reset();
   }
 }
-
-
-

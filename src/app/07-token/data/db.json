@@ -18,7 +18,7 @@
     },
     {
       "id": "azucena-ortiz",
-      "name": "Azucena Castillo",
+      "name": "Azucena Milagros Ortiz Castillo",
       "country": "Ecuador",
       "style": "Artes marciales mixtas (luchadora)",
       "img": "/assets/token/luchadores/Azucena_new.png",
@@ -106,7 +106,7 @@
     },
     {
       "id": "lars-alexandersson",
-      "name": "Lars",
+      "name": "Lars Alexandersson",
       "country": "Suecia",
       "style": "Artes marciales de la Tekken Force",
       "img": "/assets/token/luchadores/Lars-Alexandersson_new.png",
@@ -241,103 +241,20 @@
       "background": "/assets/token/fondoplayer.png"
     },
     {
-      "id": "26f2"
+      "id": "Hasbulla",
+      "name": "Pepee",
+      "country": "Sudafrica",
+      "style": "Jeet Kune Do",
+      "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
+      "background": "../../../../assets/token/fondoazul.png"
     },
     {
-      "id": "Juanramon",
-      "name": "Juanito",
-      "country": "España",
-      "style": "Wing Chun",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Juanramon",
-      "name": "Juanito",
-      "country": "España",
-      "style": "Wing Chun",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "country": "",
-      "style": "",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "country": "",
-      "style": "",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Antonio",
-      "name": "Luis",
-      "country": "Ruanda",
-      "style": "Capoeira",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Antonio",
-      "name": "Luis",
-      "country": "Ruanda",
-      "style": "Capoeira",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Antonio",
-      "name": "Luis",
-      "country": "Ruanda",
-      "style": "Capoeira",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Antonio",
-      "name": "Luis",
-      "country": "Ruanda",
-      "style": "Capoeira",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Antonio",
-      "name": "Luis",
-      "country": "Ruanda",
-      "style": "Capoeira",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Antonio",
-      "name": "Luis",
-      "country": "Ruanda",
-      "style": "Capoeira",
-      "img": "",
-      "background": ""
-    },
-    {
-      "id": "Juanramon",
-      "name": "Hacer la cama",
-      "country": "España",
-      "style": "Aikido",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfs5v5IAcegfW_9wE60kkvGh_erWqAn2y9pg&s",
-      "background": ""
-    },
-    {
-      "id": "Juanramon",
-      "name": "Hacer la cama",
-      "country": "España",
-      "style": "Aikido",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfs5v5IAcegfW_9wE60kkvGh_erWqAn2y9pg&s",
-      "background": ""
+      "id": "Hasbulla",
+      "name": "Pepee",
+      "country": "Sudafrica",
+      "style": "Jeet Kune Do",
+      "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
+      "background": "../../../../assets/token/fondoazul.png"
     }
   ]
 }

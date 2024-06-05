@@ -1,11 +1,17 @@
+@font-face {
+  font-family: target;
+  src: url('../../../../assets/token/tarrgetexpand.ttf');
+}
+
+
+
+
+
 body {
   background-image: linear-gradient(to right, #992424, #1d1212, #000000, #0c0808, #0f0f5a);
   height: 100vh;
 }
-body {
-  background-color: #f7f7f7;
-  font-family: 'Arial', sans-serif;
-}
+
 
 .container {
   max-width: 600px;
@@ -49,3 +55,7 @@ h1 {
 .btn-primary:hover {
   background:  linear-gradient(to left, #24992a, #1d1212,#000000, #0c0808, #24992a);
 }
+
+
+
+

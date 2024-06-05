@@ -7,6 +7,7 @@ import { AdminComponent } from './pages/admin-page/admin.component';
 import { TokenGuard } from './guards/tokenadmin.guard';
 
 import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
+import { DeletePageComponent } from './pages/delete-character-page/delete-page/delete-page.component';
 
 const routes: Routes =[
 
@@ -27,6 +28,11 @@ const routes: Routes =[
   },{
     path: 'add',
     component: AddCharacterPageComponent, canActivate: [
+       TokenGuard
+    ]
+  },{
+    path: 'delete',
+    component: DeletePageComponent, canActivate: [
        TokenGuard
     ]
   },

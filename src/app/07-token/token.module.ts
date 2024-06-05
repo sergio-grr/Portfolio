@@ -17,6 +17,7 @@ import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common
 import { NavBarComponent } from './Components/navBar/navBar.component';
 import { SpinnerComponent } from './Components/spinner/spinner/spinner.component';
 import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
+import { DeletePageComponent } from './pages/delete-character-page/delete-page/delete-page.component';
 
 
 
@@ -32,6 +33,7 @@ import { AddCharacterPageComponent } from './pages/add-character-page/add-charac
     NavBarComponent,
     SpinnerComponent,
     AddCharacterPageComponent,
+    DeletePageComponent
 
 
 

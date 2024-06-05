@@ -1,0 +1,77 @@
+
+
+
+body {
+
+  background-image: linear-gradient(to right, #992424, #1d1212, #000000, #0c0808, #0f0f5a);
+  height: 100vh;
+  justify-content: center;
+
+}
+
+
+
+.tarjeta{
+  position: relative;
+  width: 220px;
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+
+.player-img:hover {
+  transform: scale(1.1);
+}
+
+
+.fondoplayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-img {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 2;
+}
+
+
+.btn{
+  background-color: red;
+  position: relative;
+  z-index: 4;
+  top: 100%;
+  
+
+}
+
+#name{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 65%;
+  width: 170px;
+  height: 60px;
+  z-index: 3;
+  font-family: "target";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f7bf0a;
+  margin-left: 12px;
+  font-size: 1.2rem;
+  white-space: break-word;
+  border-radius: 5%;
+}
+
+

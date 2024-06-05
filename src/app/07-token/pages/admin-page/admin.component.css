@@ -16,11 +16,7 @@ body {
 }
 
 
-#tool{
-  margin-top: 50%;
-  color: white;
-}
+#delete{
+  color: red;
 
-#logotool{
-  color:white;
 }
