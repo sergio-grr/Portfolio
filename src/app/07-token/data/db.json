@@ -18,7 +18,7 @@
     },
     {
       "id": "azucena-ortiz",
-      "name": "Azucena Milagros Ortiz Castillo",
+      "name": "Azucena Ortiz",
       "country": "Ecuador",
       "style": "Artes marciales mixtas (luchadora)",
       "img": "/assets/token/luchadores/Azucena_new.png",
@@ -239,22 +239,6 @@
       "style": "Artes ancestrales de asesinato",
       "img": "/assets/token/luchadores/Zafina_new.png",
       "background": "/assets/token/fondoplayer.png"
-    },
-    {
-      "id": "Hasbulla",
-      "name": "Pepee",
-      "country": "Sudafrica",
-      "style": "Jeet Kune Do",
-      "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
-      "background": "../../../../assets/token/fondoazul.png"
-    },
-    {
-      "id": "Hasbulla",
-      "name": "Pepee",
-      "country": "Sudafrica",
-      "style": "Jeet Kune Do",
-      "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
-      "background": "../../../../assets/token/fondoazul.png"
     }
   ]
 }

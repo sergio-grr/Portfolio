@@ -23,45 +23,47 @@ export class AddCharacterPageComponent {
   constructor(private characterService: CharactersService) { }
 
   get currentFighter(): Fighters {
-    return this.characterForm.value as Fighters;
+    const fighters = this.characterForm.value as Fighters;
+    return fighters
   }
-
 
   onSubmit(): void {
     if (this.characterForm.invalid) return;
 
-
-    if (this.currentFighter.id) {
-      this.characterService.getCharactersById(this.currentFighter.id).subscribe(existingFighter => {
-        if (existingFighter) {
-          Swal.fire({
-            position: "top",
-            icon: "error",
-            title: "El personaje ya existe",
-            showConfirmButton: false,
-            timer: 2500,
-            showClass: {
-              popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
-              popup: 'animate__animated animate__fadeOutUp'
-            }
-          });
-        } else {
-          this.addCharacter();
+    const id = this.currentFighter.id.trim();
+    if (id) {
+      this.characterService.getCharactersById(id).subscribe({
+        next: (existingFighter) => {
+          if (existingFighter) {
+            this.showErrorAlert('El personaje ya existe');
+          } else {
+            // Si el personaje no existe, entonces añadirlo
+            this.addCharacter();
+          }
+        },
+        error: () => {
+          // Si hay un error al verificar, mostrar una alerta de error
+          this.showErrorAlert('Error al verificar el personaje');
         }
       });
     }
   }
 
-  private addCharacter(): void {
-    this.characterService.addCharacter(this.currentFighter).subscribe(() => {
-      this.showSuccessAlert();
-      this.resetForm();
+  addCharacter(): void {
+    this.characterService.addCharacter(this.currentFighter).subscribe({
+      next: () => {
+        // Si se añade correctamente, mostrar una alerta de éxito y resetear el formulario
+        this.showSuccessAlert();
+        this.resetForm();
+      },
+      error: () => {
+        // Si hay un error al añadir, mostrar una alerta de error
+        this.showErrorAlert('Error al añadir el personaje');
+      }
     });
   }
 
-  private showSuccessAlert(): void {
+  showSuccessAlert(): void {
     Swal.fire({
       position: "top",
       icon: "success",
@@ -77,7 +79,23 @@ export class AddCharacterPageComponent {
     });
   }
 
-  private resetForm(): void {
+  showErrorAlert(message: string): void {
+    Swal.fire({
+      position: "top",
+      icon: "error",
+      title: message,
+      showConfirmButton: false,
+      timer: 2500,
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    });
+  }
+
+  resetForm(): void {
     this.characterForm.reset();
   }
 }

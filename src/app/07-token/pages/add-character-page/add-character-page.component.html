@@ -4,7 +4,7 @@
   <div class="container text-center mt-3">
     <h1>Añadir personaje</h1>
     <div class="card">
-      <form [formGroup]="characterForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="characterForm" >
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-123" viewBox="0 0 16 16">
@@ -100,7 +100,7 @@
                 </svg>
               </span>
             </div>
-            <select  formControlName="background" name="image-url" class="form-control">
+            <select  formControlName="background" placeholder="Elegir fondo de tarjeta" name="image-url" class="form-control">
               <option selected="">Seleccionar fondo</option>
               <option value="../../../../assets/token/fondoplayer.png">Fondo Rojo</option>
               <option value="../../../../assets/token/fondoazul.png">Fondo Azul</option>
