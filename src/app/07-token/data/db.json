@@ -2,7 +2,7 @@
   "fighters": [
     {
       "id": "alisa-bosconovitch",
-      "name": "Alisa Bosconovitch",
+      "name": "Alisa",
       "country": "Rusia",
       "style": "Estilo de lucha de alta movilidad basado en propulsores",
       "img": "/assets/token/luchadores/Alisa_new.png",
@@ -29,7 +29,7 @@
       "name": "Bryan Fury",
       "country": "EE.UU",
       "style": "Kickboxing",
-      "img": "/assets/token/luchadores/Bryan-Fury_new.png",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJG7gLbz7_bPnOwU_wraQRdt6RrSpfdb1JJ4JwDkpLj0uPOJqiWejeiadGOAmK-9u0UBM&usqp=CAU",
       "background": "/assets/token/fondoplayer.png"
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "id": "lars-alexandersson",
-      "name": "Lars Alexandersson",
+      "name": "Lars",
       "country": "Suecia",
       "style": "Artes marciales de la Tekken Force",
       "img": "/assets/token/luchadores/Lars-Alexandersson_new.png",
@@ -117,7 +117,7 @@
       "name": "Lee Chaolan",
       "country": "Japón",
       "style": "Artes marciales",
-      "img": "/assets/token/luchadores/lee_new.png",
+      "img": "https://pbs.twimg.com/media/GDZXOP_XEAEgizU.jpg",
       "background": "/assets/token/fondoplayer.png"
     },
     {
@@ -239,6 +239,14 @@
       "style": "Artes ancestrales de asesinato",
       "img": "/assets/token/luchadores/Zafina_new.png",
       "background": "/assets/token/fondoplayer.png"
+    },
+    {
+      "id": "Hasbulla",
+      "name": "Hasbulla",
+      "country": "Rusia",
+      "style": "El amor",
+      "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
+      "background": "../../../../assets/token/amarillo.png"
     }
   ]
 }

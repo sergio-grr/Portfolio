@@ -32,7 +32,9 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/07-token/data/db.json",
+              "src/app/07-token/data/db-back.json"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",

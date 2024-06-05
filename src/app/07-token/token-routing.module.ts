@@ -8,6 +8,7 @@ import { TokenGuard } from './guards/tokenadmin.guard';
 
 import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
 import { DeletePageComponent } from './pages/delete-character-page/delete-page/delete-page.component';
+import { EditPageComponent } from './pages/edit-page/edit-page.component';
 
 const routes: Routes =[
 
@@ -33,6 +34,11 @@ const routes: Routes =[
   },{
     path: 'delete',
     component: DeletePageComponent, canActivate: [
+       TokenGuard
+    ]
+  },{
+    path: 'edit',
+    component: EditPageComponent, canActivate: [
        TokenGuard
     ]
   },

@@ -13,12 +13,6 @@ export class DeletePageComponent implements OnInit {
 
   public fighters: Fighters[] = [];
   public characterForm = new FormGroup({
-    id: new FormControl('', Validators.required),
-    name: new FormControl('', Validators.required),
-    country: new FormControl('', Validators.required),
-    style: new FormControl('', Validators.required),
-    img: new FormControl('', Validators.required),
-    background: new FormControl('', Validators.required),
   });
 
   constructor(private charactersService: CharactersService) { }

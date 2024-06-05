@@ -18,6 +18,7 @@ import { NavBarComponent } from './Components/navBar/navBar.component';
 import { SpinnerComponent } from './Components/spinner/spinner/spinner.component';
 import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
 import { DeletePageComponent } from './pages/delete-character-page/delete-page/delete-page.component';
+import { EditPageComponent } from './pages/edit-page/edit-page.component';
 
 
 
@@ -33,7 +34,8 @@ import { DeletePageComponent } from './pages/delete-character-page/delete-page/d
     NavBarComponent,
     SpinnerComponent,
     AddCharacterPageComponent,
-    DeletePageComponent
+    DeletePageComponent,
+    EditPageComponent
 
 
 
