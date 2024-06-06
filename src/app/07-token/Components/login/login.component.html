@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="justify-content-center d-flex align-items-center">
+    <h1>Confirmar autorización</h1>
+  </div>
+  <form class="mt-5" (ngSubmit)="login()">
+    <input class="mb-3"
+      type="text"
+      name="user"
+      placeholder="Usuario"
+      [(ngModel)]="user"
+      required
+    />
+    <input class="mb-3"
+      type="password"
+      name="password"
+      placeholder="Password"
+      [(ngModel)]="password"
+      required
+    />
+    <button type="submit" class="btn btn-primary">Log in</button>
+  </form>
+</div>

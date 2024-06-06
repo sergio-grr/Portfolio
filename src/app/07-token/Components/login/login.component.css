@@ -1,0 +1,49 @@
+@font-face {
+  font-family: target;
+  src: url('../../../../assets/token/tarrgetexpand.ttf');
+}
+
+.container {
+  max-width:400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  border: 5px solid rgba(0, 0, 0, 0.664);
+
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "target";
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "target";
+}

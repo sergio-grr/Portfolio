@@ -120,12 +120,13 @@ input{
 @media only screen and (min-width: 1281px) {
   #arcade{
     background-image: url(../../../assets/token/fondoarcade.jpg);
-    background-size: contain;
+    background-size: cover;
     height:100vh;
     width: 100%;
     background-position: center;
     position:relative;
     background-repeat:initial;
+
   }
 
   #log {

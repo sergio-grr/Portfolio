@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { JwtInterceptor } from './07-token/services/interceptor/jwt.interceptor.service';
 import { SpinnerInterceptor } from './07-token/services/interceptor/spinner.interceptor.service';
+import { TokenGuard } from './07-token/guards/tokenadmin.guard';
+import { AdminGuard } from './07-token/guards/admin.guard';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { SpinnerInterceptor } from './07-token/services/interceptor/spinner.inte
   providers: [
   { provide: HTTP_INTERCEPTORS, useClass:JwtInterceptor, multi:true},
   { provide: HTTP_INTERCEPTORS, useClass:SpinnerInterceptor, multi: true},
+  TokenGuard,
+  AdminGuard,
   ],
   bootstrap: [AppComponent]
 })

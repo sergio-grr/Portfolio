@@ -1,0 +1,25 @@
+@font-face {
+  font-family: target;
+  src: url('../../../../assets/token/tarrgetexpand.ttf');
+}
+
+
+body {
+
+  background-image: linear-gradient(to right, #992424, #1d1212, #000000, #0c0808, #0f0f5a);
+  height: 100vh;
+  justify-content: center;
+
+}
+
+
+h1 {
+  color: white;
+  font-family: "target";
+  font-size:2.5rem;
+}
+
+.btn{
+  font-family: "target";
+  font-size:1.5rem;
+}

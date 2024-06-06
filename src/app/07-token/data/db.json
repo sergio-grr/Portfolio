@@ -18,7 +18,7 @@
     },
     {
       "id": "azucena-ortiz",
-      "name": "Azucena Ortiz",
+      "name": "Azucena  Ortiz ",
       "country": "Ecuador",
       "style": "Artes marciales mixtas (luchadora)",
       "img": "/assets/token/luchadores/Azucena_new.png",
@@ -29,7 +29,7 @@
       "name": "Bryan Fury",
       "country": "EE.UU",
       "style": "Kickboxing",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJG7gLbz7_bPnOwU_wraQRdt6RrSpfdb1JJ4JwDkpLj0uPOJqiWejeiadGOAmK-9u0UBM&usqp=CAU",
+      "img": "/assets/token/luchadores/Bryan-Fury_new.png",
       "background": "/assets/token/fondoplayer.png"
     },
     {
@@ -117,7 +117,7 @@
       "name": "Lee Chaolan",
       "country": "Japón",
       "style": "Artes marciales",
-      "img": "https://pbs.twimg.com/media/GDZXOP_XEAEgizU.jpg",
+      "img": "/assets/token/luchadores/lee_new.png",
       "background": "/assets/token/fondoplayer.png"
     },
     {
@@ -242,9 +242,9 @@
     },
     {
       "id": "Hasbulla",
-      "name": "Hasbulla",
+      "name": "Hasbu",
       "country": "Rusia",
-      "style": "El amor",
+      "style": "Hacer el amor",
       "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
       "background": "../../../../assets/token/amarillo.png"
     }

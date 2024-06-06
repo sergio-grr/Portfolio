@@ -26,5 +26,10 @@ body {
 }
 
 #edit{
-  color: yellow;
+  color: rgb(162, 255, 86);
+}
+
+
+#restore{
+  color: orange;
 }

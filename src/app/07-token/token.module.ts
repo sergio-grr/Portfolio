@@ -19,6 +19,9 @@ import { SpinnerComponent } from './Components/spinner/spinner/spinner.component
 import { AddCharacterPageComponent } from './pages/add-character-page/add-character-page.component';
 import { DeletePageComponent } from './pages/delete-character-page/delete-page/delete-page.component';
 import { EditPageComponent } from './pages/edit-page/edit-page.component';
+import { RestorePageComponent } from './pages/restore-page/restore-page.component';
+import { LoginComponent } from './Components/login/login.component';
+import { DatabasePageComponent } from './pages/database-page/database-page.component';
 
 
 
@@ -27,18 +30,19 @@ import { EditPageComponent } from './pages/edit-page/edit-page.component';
     MaintokenComponent,
     MenuComponent,
     UserComponent,
-    AdminComponent ,
+    AdminComponent,
+    AddCharacterPageComponent,
+    DeletePageComponent,
+    EditPageComponent,
+    RestorePageComponent,
+    DatabasePageComponent,
+
+    LoginComponent,
     ModalTokenComponent,
     TokenAdminComponent,
     TokenUserComponent,
     NavBarComponent,
     SpinnerComponent,
-    AddCharacterPageComponent,
-    DeletePageComponent,
-    EditPageComponent
-
-
-
   ],
   imports: [
     CommonModule,
