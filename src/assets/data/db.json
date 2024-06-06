@@ -241,12 +241,20 @@
       "background": "/assets/token/fondoplayer.png"
     },
     {
-      "id": "Hasbulla",
+      "id": "Hasbullaa",
       "name": "Hasbu",
       "country": "Rusia",
-      "style": "Hacer el amor",
-      "img": "https://i.pinimg.com/originals/74/d8/82/74d8828298e8ab388bb0b7e6c1c4ad34.png",
-      "background": "../../../../assets/token/amarillo.png"
+      "style": "Piguaquan",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfs5v5IAcegfW_9wE60kkvGh_erWqAn2y9pg&s",
+      "background": "../../../../assets/token/fondoazul.png"
+    },
+    {
+      "id": "luisalberto",
+      "name": "LUISAL",
+      "country": "Rumania",
+      "style": "Sambo",
+      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2d0f8c0d-861d-426b-bedf-ed7af2f563b4/d9un04l-b221ab07-58c9-4200-9fe4-eb9a4171a4cc.png/v1/fill/w_1024,h_1286/tekken_7_king_png_by_tekkensarmorking_d9un04l-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4NiIsInBhdGgiOiJcL2ZcLzJkMGY4YzBkLTg2MWQtNDI2Yi1iZWRmLWVkN2FmMmY1NjNiNFwvZDl1bjA0bC1iMjIxYWIwNy01OGM5LTQyMDAtOWZlNC1lYjlhNDE3MWE0Y2MucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fe81tqRwbj9jR5NA705NBYjQEf7yACCT86QjH2Rnb3M",
+      "background": "../../../../assets/token/morado.png"
     }
   ]
 }

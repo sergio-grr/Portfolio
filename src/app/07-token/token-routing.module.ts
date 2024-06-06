@@ -1,7 +1,7 @@
 import { MaintokenComponent } from './maintoken/maintoken.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MenuComponent } from './pages/menu/menu.component';
+import { MenuComponent } from './pages/menu-page/menu.component';
 import { UserComponent } from './pages/user-page/user.component';
 import { AdminComponent } from './pages/admin-page/admin.component';
 import { TokenGuard } from './guards/tokenadmin.guard';

@@ -1,36 +1,30 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, tap } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { CharactersService } from './characters.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BackupRestoreService {
 
-  private backup = './../data/db-back.json'
-  private database = './../data/db.json'
+  private dataBaseUrl = 'assets/data/db.json'; // URL para el archivo de base de datos
+  private backupUrl = 'assets/data/db-back.json'; // URL para el archivo de respaldo
 
+  constructor(private http: HttpClient, private charactersService: CharactersService) { }
 
-constructor( private http: HttpClient) { }
-
-
-  getData(): Observable< any > {
-    return this.http.get(this.backup);
+  getData(): Observable<any> {
+    return this.http.get(this.dataBaseUrl);
   }
 
-  saveData( data: any): Observable< any >{
-
-    return this.http.post(this.database, data)
-    .pipe(
-      tap(() => console.log('Data saved successfully!'))
-    );
+  getRestore(): Observable<any> {
+    return this.http.get(this.backupUrl);
   }
 
-
-  restoreData(): void {
-    this.getData().subscribe( data => {
-      this.saveData(data).subscribe();
-    })
+  replaceData(dataBase: any, backup: any): Observable <any> {
+    const newDataBase = dataBase; // Clonar la base de datos para evitar cambios inesperados
+    newDataBase.fighters = backup.fighters;
+    this.charactersService.getCharacters().subscribe(); // Obtener los nuevos datos del servicio CharactersService
+    return of(newDataBase);
   }
-
 }

@@ -3,13 +3,17 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, of, throwError } from 'rxjs';
 import { Fighters } from '../interfaces/characters.interface';
 import { environments } from '../environments/environments';
+import { BackupRestoreService } from './backup-restore.service';
 
 @Injectable({ providedIn: 'root' })
 export class CharactersService {
 
   private baseUrl: string = environments.baseUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private backupRestoreService: BackupRestoreService
+  ) { }
 
   getCharacters(): Observable<Fighters[]> {
     return this.http.get<Fighters[]>(`${this.baseUrl}/fighters`);

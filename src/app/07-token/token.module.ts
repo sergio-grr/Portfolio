@@ -5,7 +5,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { MaintokenComponent } from './maintoken/maintoken.component';
 import { TokenRoutingModule } from './token-routing.module';
-import { MenuComponent } from './pages/menu/menu.component';
+import { MenuComponent } from './pages/menu-page/menu.component';
 import { UserComponent } from './pages/user-page/user.component';
 import { ModalTokenComponent } from './Components/modal/modaltoken/modaltoken.component';
 import { AdminComponent } from './pages/admin-page/admin.component';
